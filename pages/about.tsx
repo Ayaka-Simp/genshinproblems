@@ -38,6 +38,7 @@ const About: NextPage = () => {
         <meta name="description" content="About this website" />
       </Head>
       <NavBar />
+      <div style={{ height: "50px" }} />
       <header style={{ textAlign: "center" }}>
         <h1 className="animate top" style={{ animationDelay: "0.5s" }}>
           About this website
