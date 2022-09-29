@@ -102,12 +102,20 @@ const Conclusion: NextPage = () => {
               Main Problems menu
             </button>
           </Link>
-          <Link href="https://google.com">
+          <Link href="/about">
             <button
               className="btn animate left"
               style={{ animationDelay: "6s", marginLeft: "5px" }}
             >
-              Get out of here
+              About this website
+            </button>
+          </Link>
+          <Link href="https://google.com">
+            <button
+              className="btn animate left"
+              style={{ animationDelay: "6.1s", marginLeft: "5px" }}
+            >
+              Escape this place!
             </button>
           </Link>
         </main>

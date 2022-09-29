@@ -56,7 +56,7 @@ const About: NextPage = () => {
           <br />
           <br />
           <span className="animate left" style={{ animationDelay: "2s" }}>
-            Lines of TSX (TypeScript Extended): 1107
+            Lines of TSX (TypeScript Extended): 1115
           </span>
           <br />
           <br />
@@ -66,7 +66,7 @@ const About: NextPage = () => {
           <br />
           <br />
           <span className="animate left" style={{ animationDelay: "2.2s" }}>
-            Total lines of code (and essay): 1761
+            Total lines of code (and essay): 1769
           </span>
           <br />
           <br />
