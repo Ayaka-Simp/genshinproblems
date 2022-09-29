@@ -196,7 +196,7 @@ const BugFixing: NextPage = () => {
           <hr className="animate2 bottom" style={{ animationDelay: "0.5s" }} />
           <div className="animate2 bottom" style={{ animationDelay: "1.7s" }}>
             <Link
-              href="/problems/bugfixing"
+              href="/problems/firstanniversaryrewards"
               style={{ color: "#0070f3", textDecoration: "underline" }}
             >
               <button className="btn">Next Problem →</button>

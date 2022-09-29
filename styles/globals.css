@@ -99,6 +99,10 @@ a {
   .nav-item:hover {
     animation: nav-item-animation-light 1s both;
   }
+
+  .btn {
+    color: white;
+  }
 }
 
 .fade-in-left {
