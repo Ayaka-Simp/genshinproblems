@@ -294,3 +294,12 @@ a {
 .animate2 {
   opacity: 0;
 }
+
+#footer {
+  height: 100vh;
+  padding: 20px;
+}
+
+footer > p > a {
+  text-decoration: underline;
+}

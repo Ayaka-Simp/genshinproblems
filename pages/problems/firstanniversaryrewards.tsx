@@ -98,9 +98,10 @@ const FirstAnniversaryRewards: NextPage = () => {
           </p>
           <hr className="animate" style={{ animationDelay: "2.9s" }} />
           <h2 className="animate bottom" style={{ animationDelay: "4.5s" }}>
-            (another) WARNING: This will probably be the longest one out of all
-            of them since this is the worst issue. HoYoverse&apos;s greed is
-            unforgivable, so I&apos;m sorry if I start ranting too much here.
+            (another) WARNING: Pretty long essay, some jargon and technical
+            language but this is the worst issue so I think it&apos;s deserved.
+            HoYoverse&apos;s greed is unforgivable, so I&apos;m sorry if I start
+            ranting too much here.
           </h2>
           <p className="animate bottom" style={{ animationDelay: "5.7s" }}>
             Oh, my god. I don&apos;t know where to start this one, so I guess
@@ -139,17 +140,37 @@ const FirstAnniversaryRewards: NextPage = () => {
             <sup>rd</sup> which is another of HoYoverse&apos;s games.) In Cookie
             Run Kingdom, players got 100 gacha pulls (they&apos;re not called
             wishes in CRK), plus a bunch of other stuff in the game that I
-            can&apos;t list because there are too many.
+            can&apos;t list because there are too many. This is actually very
+            generous (compared to Genshin) but not so generous that it
+            completely ruins the game because everyone has everything.
+            <br />
+            <br />
+            That brings us to the image in the top. Many people were spamming
+            :qiqifallen: in Genshin Impact&apos;s Discord server, and it got so
+            bad that the mods put a slow-mode of 30 minutes in their Discord
+            chat, and started banning anyone hating for the anniversary rewards.
+            This miscommunication and censorship is even worse than China&apos;s
+            internet censorship. Speaking of spamming, may people were spamming
+            1-star reviews on Genshin. This eventually spread to other games,
+            like Honkai Impact 3<sup>rd</sup> and Tears of Themis
+            (HoYoverse&apos;s other games). After a while, things got out of
+            hand with people review bombing completely unrelated games such as
+            Mobile Legends Bang Bang, and five people even 1-starred Google
+            Classroom!
+            <br />
+            <br />
+            To be completely honest, I&apos;m not really sure what else to say
+            here because so many other people have covered it. All that I want
+            to say is that HoYoverse is greedy and will sacrifice player
+            experience/fun just for more advertising. This is a good strategy to
+            lure new players in, but not for keeping everyone who joined inside
+            the player base forever.
           </p>
           <hr className="animate2 bottom" style={{ animationDelay: "0.5s" }} />
           <div className="animate2 bottom" style={{ animationDelay: "1.7s" }}>
-            <Link
-              href="/problems/bugfixing"
-              style={{ color: "#0070f3", textDecoration: "underline" }}
-            >
-              <button className="btn">Next Problem →</button>
-            </Link>{" "}
-            <div className={styles.vl} />
+            <Link href="/conclusion">
+              <button className="btn">Conclusion →</button>
+            </Link>
             <Link href="/problems/gacha">
               <button className="btn" style={{ marginLeft: "1.2rem" }}>
                 ← Previous Problem

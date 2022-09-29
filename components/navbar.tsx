@@ -21,6 +21,14 @@ const NavBar: NextComponentType = () => {
           Genshin&apos;s problems
         </Link>
       </div>
+      <div className="nav-item">
+        <Link href="/conclusion" className="nav-link">
+          Conclusion
+        </Link>
+      </div>
+      <div className="nav-item">
+        <Link href="/#footer">About this website</Link>
+      </div>
     </div>
   );
 };

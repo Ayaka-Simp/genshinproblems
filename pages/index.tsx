@@ -54,6 +54,25 @@ const Home: NextPage = () => {
     });
     observer2.observe(document.querySelector(".animate2")!);
 
+    const observer3 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll(".animate3").forEach((element) => {
+            if (element.classList.contains("top")) {
+              element.classList.add("fade-in-top");
+            } else if (element.classList.contains("left")) {
+              element.classList.add("fade-in-left");
+            } else if (element.classList.contains("right")) {
+              element.classList.add("fade-in-right");
+            } else if (element.classList.contains("bottom")) {
+              element.classList.add("fade-in-bottom");
+            }
+          });
+        }
+      });
+    });
+    observer3.observe(document.querySelector(".animate3")!);
+
     const navbar = document.querySelector("." + navStyles.nav);
     (navbar as HTMLElement).style.animationDelay = "3.6s";
   });
@@ -138,6 +157,17 @@ const Home: NextPage = () => {
             <Link href="/problems">Read More</Link>
           </div>
         </main>
+        <footer id="footer">
+          <div style={{ width: "100vw", height: "20px" }} />
+          <h2 className="animate3 top">About this website</h2>
+          <p className="animate3 bottom" style={{ animationDelay: "1.2s" }}>
+            This website was made with{" "}
+            <Link href="https://nextjs.org">Next.js</Link> and hosted with{" "}
+            <Link href="https://vercel.com">Vercel</Link> <br />
+            <br />
+            <Link href="/about">Read More</Link>
+          </p>
+        </footer>
       </div>
     </>
   );
