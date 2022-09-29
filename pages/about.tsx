@@ -2,6 +2,8 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect } from "react";
+import NavBar from "../components/navbar";
+import navStyles from "../../styles/NavBar.module.css";
 
 const About: NextPage = () => {
   useEffect(() => {
@@ -26,6 +28,8 @@ const About: NextPage = () => {
       });
     });
     observer.observe(document.querySelector(".animate")!);
+    const navbar = document.querySelector("." + navStyles.nav);
+    (navbar as HTMLElement).style.animationDelay = "3.6s";
   });
   return (
     <>
@@ -33,6 +37,7 @@ const About: NextPage = () => {
         <title>About this website | Genshin Impact&apos;s problems</title>
         <meta name="description" content="About this website" />
       </Head>
+      <NavBar />
       <header style={{ textAlign: "center" }}>
         <h1 className="animate top" style={{ animationDelay: "0.5s" }}>
           About this website
