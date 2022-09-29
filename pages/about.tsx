@@ -44,7 +44,7 @@ const About: NextPage = () => {
           About this website
         </h1>
       </header>
-      <main style={{ padding: "20px", margin: "30px" }}>
+      <main style={{ margin: "30px", padding: "20px" }}>
         <p>
           <span className="animate left" style={{ animationDelay: "1.7s" }}>
             Made with <Link href="https://nextjs.org">Next.js</Link>
