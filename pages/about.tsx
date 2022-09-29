@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useEffect } from "react";
 import NavBar from "../components/navbar";
-import navStyles from "../../styles/NavBar.module.css";
+import navStyles from "../styles/NavBar.module.css";
 
 const About: NextPage = () => {
   useEffect(() => {
