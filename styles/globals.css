@@ -303,3 +303,7 @@ a {
 footer > p > a {
   text-decoration: underline;
 }
+
+span > a {
+  text-decoration: underline;
+}
