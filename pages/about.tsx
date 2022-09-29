@@ -2,8 +2,8 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect } from "react";
-import NavBar from "../components/navbar";
 import navStyles from "../styles/NavBar.module.css";
+import NavBar from "../components/navbar";
 
 const About: NextPage = () => {
   useEffect(() => {
