@@ -74,7 +74,7 @@ const Home: NextPage = () => {
     observer3.observe(document.querySelector(".animate3")!);
 
     const navbar = document.querySelector("." + navStyles.nav);
-    (navbar as HTMLElement).style.animationDelay = "3.6s";
+    (navbar as HTMLElement).style.animationDelay = "4.1s";
   });
   return (
     <>
@@ -100,17 +100,18 @@ const Home: NextPage = () => {
               height="115"
               className="animate top"
               id="genshin-image"
+              style={{ animationDelay: "0.5s" }}
             />
             <p
               className="caption animate bottom"
-              style={{ animationDelay: "1.2s" }}
+              style={{ animationDelay: "1.7s" }}
             >
               and its problems
             </p>
             <small
               className="animate bottom"
               style={{
-                animationDelay: "2.4s",
+                animationDelay: "2.9s",
                 fontWeight: "normal",
                 fontSize: "x-small",
               }}
