@@ -1,0 +1,48 @@
+.container {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.container_p {
+  margin-top: 10vh;
+  padding: 0 60px;
+}
+
+.card_link {
+  text-decoration: underline;
+}
+
+#caption {
+  font-weight: 500;
+  font-size: 11px;
+}
+
+#header {
+  text-align: center;
+}
+
+.small {
+  font-size: 5px;
+}
+
+.vl {
+  height: 62px;
+  width: 2px;
+  display: inline;
+  margin: 0 0.5em;
+  position: absolute;
+}
+
+@media (prefers-color-scheme: dark) {
+  .vl {
+    background-color: white;
+    border: 1px solid white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .vl {
+    background-color: black;
+    border: 1px solid black;
+  }
+}

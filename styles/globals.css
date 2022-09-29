@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth !important;
+  font-size: 17.5px;
 }
 
 a {
@@ -11,8 +13,44 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+@keyframes nav-item-animation-dark {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: rgb(146, 146, 146);
+  }
+}
+
+@keyframes nav-item-animation-dark-reverse {
+  0% {
+    color: rgb(146, 146, 146);
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+@keyframes nav-item-animation-light {
+  0% {
+    color: black;
+  }
+
+  100% {
+    color: rgb(109, 109, 109);
+  }
+}
+
+@keyframes nav-item-animation-light-reverse {
+  0% {
+    color: rgb(109, 109, 109);
+  }
+
+  100% {
+    color: black;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +61,236 @@ a {
     color: white;
     background: black;
   }
+
+  .card {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: black;
+  }
+
+  .nav-item {
+    animation: nav-item-animation-dark-reverse 0.5s both ease;
+  }
+
+  .nav-item:hover {
+    animation: nav-item-animation-dark 0.5s both ease;
+  }
+
+  .card > hr {
+    border: 0.5px solid black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: rgba(0, 0, 0);
+    color: white;
+  }
+
+  .card > hr {
+    border: 0.5px solid white;
+  }
+
+  .nav-item {
+    background-color: white;
+    color: black;
+    animation: nav-item-animation-light-reverse 0.5s both;
+  }
+
+  .nav-item:hover {
+    animation: nav-item-animation-light 1s both;
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1.2s both;
+}
+
+.fade-in-top {
+  animation: fadeInTop 1.2s both;
+}
+
+.fade-in-bottom {
+  animation: fadeInBottom 1.2s both;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1.2s both;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s both;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.caption {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card {
+  border: 0.25px solid;
+  border-radius: 15px;
+  width: 25vw;
+  height: fit-content;
+  text-align: left;
+  padding: 20px;
+  margin: 2.5vw;
+  display: inline-block;
+}
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 80px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite, down-arrow-fade-in 1s both 4.6s;
+}
+
+.down-arrow::after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.top-section {
+  min-height: 100vh;
+}
+
+@keyframes down-arrow-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-item {
+  width: fit-content;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  border-radius: 3px;
+  margin: 20px;
+}
+
+.card > a {
+  text-decoration: underline;
+}
+
+#content {
+  height: 100vh;
+  padding-top: 20px;
+  text-align: left;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.glowing {
+  box-shadow: 0 0 5px 5px #0ff;
+  background-color: #0ff;
+  border: 0;
+}
+
+.btn {
+  background: #0070f3;
+  box-shadow: 0 0 20px 5px rgb(0 118 255 / 50%);
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 7px;
+  height: fit-content;
+  line-height: 2.5rem;
+  margin: 0;
+  cursor: pointer;
+  font-size: 17.5px;
+}
+
+.animate {
+  opacity: 0;
+}
+
+.animate2 {
+  opacity: 0;
 }
