@@ -74,7 +74,7 @@ const Home: NextPage = () => {
     observer3.observe(document.querySelector(".animate3")!);
 
     const navbar = document.querySelector("." + navStyles.nav);
-    (navbar as HTMLElement).style.animationDelay = "4.1s";
+    (navbar as HTMLElement).style.animationDelay = "5.3s";
   });
   return (
     <>
