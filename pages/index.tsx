@@ -109,8 +109,8 @@ const Home: NextPage = () => {
               and its problems
             </p>
             <p className="animate bottom" style={{ animationDelay: "2.9s" }}>
-              BTW if images load too slowly, just refresh the page (with
-              CTRL/CMD+R)
+              BTW if images load too slowly (you can see caption but no image),
+              just refresh the page (with CTRL/CMD+R)
             </p>
             <small
               className="animate bottom"
