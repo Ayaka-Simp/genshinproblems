@@ -207,7 +207,7 @@ a {
   height: 30px;
   border: 2px solid;
   border-radius: 2px;
-  animation: jumpInfinite 1.5s infinite, down-arrow-fade-in 1s both 5.1s;
+  animation: jumpInfinite 1.5s infinite, down-arrow-fade-in 1s both 6.3s;
 }
 
 .down-arrow::after {
