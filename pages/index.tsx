@@ -116,7 +116,8 @@ const Home: NextPage = () => {
                 fontSize: "x-small",
               }}
             >
-              I put my heart and soul into this website, please enjoy it
+              I poured my entire heart and all of my soul into this website,
+              please enjoy it
             </small>
           </header>
           <a href="#content">

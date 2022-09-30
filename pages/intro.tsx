@@ -100,7 +100,7 @@ const Intro: NextPage = () => {
           <Link href="/problems">
             <button
               className="btn animate left"
-              style={{ animationDelay: "30s" }}
+              style={{ animationDelay: "4.8s" }}
             >
               Read about Genshin&apos;s problems
             </button>

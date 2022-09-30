@@ -89,7 +89,7 @@ const ProblemsHome: NextPage = () => {
             </small>
             <Image
               className="animate bottom"
-              src="/images/QiQi-fallen.png"
+              src="/images/qiqi-fallen.png"
               alt="QiQi fallen"
               style={{ animationDelay: "4.1s", display: "block" }}
               width="256"
