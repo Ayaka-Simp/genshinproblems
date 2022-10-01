@@ -60,15 +60,13 @@ const Intro: NextPage = () => {
         </header>
         <main>
           <iframe
-            width="322"
-            height="181"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Rick Astley - Never Gonna Give You Up (Official Music Video)"
+            width="917"
+            height="516"
+            src="https://www.youtube.com/embed/KlYstlnlqUM"
+            title="Genshin Intro"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="animate right"
-            style={animationDelay12}
           ></iframe>
           <p
             id={styles.caption}
