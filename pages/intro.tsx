@@ -68,6 +68,7 @@ const Intro: NextPage = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="animate right"
+            style={{ animationDelay: "1.2s" }}
           ></iframe>
           <p
             id={styles.caption}
